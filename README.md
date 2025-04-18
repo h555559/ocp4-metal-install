@@ -494,8 +494,8 @@
    ```
 
    ```Installation not started
-   not reaching to internet
-   use this
+   # not reaching to internet
+   # use this
    firewall-cmd –permanent –set-target=ACCEPT –zone=internal
    firewall-cmd --reload
    ```
