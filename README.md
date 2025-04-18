@@ -493,6 +493,13 @@
    sudo coreos-installer install /dev/sda -u http://192.168.22.1:8080/ocp4/rhcos -I http://192.168.22.1:8080/ocp4/bootstrap.ign --insecure --insecure-ignition
    ```
 
+   ```Installation not started
+   not reaching to internet
+   use this
+   firewall-cmd –permanent –set-target=ACCEPT –zone=internal
+   firewall-cmd --reload
+   ```
+
    ```bash
    # Each of the Control Plane Nodes - ocp-cp-\#
    coreos.inst.install_dev=sda coreos.inst.image_url=http://192.168.22.1:8080/ocp4/rhcos coreos.inst.insecure=yes coreos.inst.ignition_url=http://192.168.22.1:8080/ocp4/master.ign
